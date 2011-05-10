@@ -27,7 +27,7 @@ Default Options:
     debounceSpeed : 400 //number of milliseconds after which preview is updated
     htmlElementSelector : '.html_element' // CSS selector for HTML text input
     cssElementSelector : '.html_element' // CSS selector for HTML text input
-    previewBoxElementSelector : '.html_element' // CSS selector for HTML text input
+    previewBoxElementSelector : '.preview_box_element' // CSS selector for HTML text input
 
 
 
