@@ -33,8 +33,9 @@ Default Options:
 
 
 == License 
- Do whatever the hell you want with it.
+Do whatever the hell you want with it.
 
 == Credits
 Special thanks to Filatov Dmitry for the jquery.debounce library.
-jQuery.debouce license - Dual licensed under the MIT and GPL licenses:
+
+jQuery.debouce license - Dual licensed under the MIT and GPL licenses.
