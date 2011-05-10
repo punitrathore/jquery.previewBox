@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script type="text/javascript" src="../javascripts/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../javascripts/jquery.debounce-1.0.5.js"></script>
+    <script type="text/javascript" src="../javascripts/jquery.previewBox.js"></script>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function(){
+        $("#preview_box_me").previewBox({debounceSpeed: 500});
+      });
+    </script>
+    <div>
+      <fieldset class="full_size">
+	<div id="preview_box_me" class="content full_size">
+          <fieldset>
+            <legend>Preview Box</legend>
+	  <div id="preview" class="preview_box_element">
+          </div>
+          </fieldset>
+
+	  <div class="full_size" id="customization_controls">
+
+	    <div style="">
+	      <div style="min-width: 900px;">
+                <fieldset style="float:left;">
+		  <legend>HTML</legend>
+                  <textarea rows="20" class="html_element me" id="html_element" cols="50">Hello</textarea>
+		</fieldset>
+		<fieldset style="float:right;">
+		  <legend>CSS</legend>
+                  <textarea rows="20" class="css_element" id="css_element" cols="50"></textarea>
+		</fieldset>
+	      </div>
+	    </div>	    
+	  </div>
+	</div>
+      </fieldset>
+    </div>
+  </body>

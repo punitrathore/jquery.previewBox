@@ -1,0 +1,38 @@
+= jquery.previewBox
+This is a jquery plugin to setup a 'preview box', which is a set of 2 input elements and 1 HTML div element.
+
+The first one, is to enter the HTML, while the second one is to enter CSS. 
+
+There is a third element, which is an HTML div, which is the placeholder to view the HTML/CSS changes. This s the preview box.
+
+As you keep typing, the preview box keeps getting updated.
+
+== Usage
+
+Example:
+
+    HTML:
+      <div id="preview_box_me" class="content full_size">
+          <div id="preview" class="previewbox_element"></div>
+          <textarea rows="20" cols="50" class="html_element" id="html_element" ></textarea>
+          <textarea rows="20" cols="50" class="css_element" id="css_element"></textarea>
+      </div>   
+   
+    jQuery:
+        $("#preview_box_me").previewBox(); //function can take optional options as parameter
+        or
+        $("preview_box_me").previewBox({debounceSpeed: 1000});
+
+Default Options:
+    debounceSpeed : 400 //number of milliseconds after which preview is updated
+    htmlElementSelector : '.html_element' // CSS selector for HTML text input
+    cssElementSelector : '.html_element' // CSS selector for HTML text input
+    previewBoxElementSelector : '.html_element' // CSS selector for HTML text input
+
+
+
+Special thanks to Filatov Dmitry for the jquery.debounce library.
+jQuery.debouce license - Dual licensed under the MIT and GPL licenses:
+
+jQuery.previewBox Author - Punit Rathore
+License - Do whatever the hell you want with it.
